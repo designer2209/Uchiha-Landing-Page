@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Landing Page</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <section>
+            <div class="circle"></div>
+            <header>
+                <a href="#"><img src="logo.png"  class="logo"></a>
+                <ul>
+                    <li><a href="https://www.instagram.com/x_prakhar_singh_x/">Instagram<i class="fab fa-instagram-square"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/prakharsingh2209/">Linkedin<i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="https://www.behance.net/prakharsingh6">Behance<i class="fab fa-behance-square"></i></a></li>
+                </ul>
+            </header>
+            <div class="content">
+                <div class="textBox">
+                    <h2>It's not just Kekkei Genkai<br>It's <span>Sharingan</span></h2>
+                    <p>A simple landing page for a fandom concept website about characters from an anime called Naruto Shippuden</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="imgBox">
+                    <img src="Madara.png" class="uchiha">
+                </div>    
+            </div>
+            <ul class="thumb">
+                <li><img src="Madara S.png" onclick="imgSlider('Madara.png');changeCircleColor('#8a0303')"></li>
+                <li><img src="Itachi S.png" onclick="imgSlider('Itachi.png');changeCircleColor('#783232')"></li>
+                <li><img src="Sasuke S.png" onclick="imgSlider('Sasuke.png');changeCircleColor('#5B5E89')"></li>
+            </ul>
+        </section>
+        <script type="text/javascript">
+            function imgSlider(anything){
+                document.querySelector('.uchiha').src = anything;
+            }
+            function changeCircleColor(color){
+                const circle = document.querySelector('.circle');
+                circle.style.background = color;
+            }
+        </script>
+    </body>
+</html>
